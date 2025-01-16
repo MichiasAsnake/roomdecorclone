@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flower Bouquet - Room Decoration Service
+
+A modern web application for booking room decoration services with roses and special arrangements.
+
+## Features
+
+- Beautiful, responsive design
+- Multiple decoration packages
+- Secure checkout process
+- Real-time form validation
+- Mobile-friendly interface
+
+## Tech Stack
+
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- ShadcN UI Components
+- Material UI Icons
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The easiest way to deploy this app is to use the [Vercel Platform](https://vercel.com).
 
-## Learn More
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Import your project to Vercel
+3. Vercel will detect it's a Next.js app and use the optimal build settings automatically
+4. Your app will be deployed to a global CDN with HTTPS
 
-To learn more about Next.js, take a look at the following resources:
+### Deploy with One Click
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/flowerboquet)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+No environment variables are required for basic functionality. If you add any APIs or services later, add them to your Vercel project settings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Uses the new Next.js 13+ App Router
+- Implements server and client components appropriately
+- Optimized images with next/image
+- SEO-friendly with proper meta tags
+- Follows accessibility best practices
+
+## License
+
+MIT
