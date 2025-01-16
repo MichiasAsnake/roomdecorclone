@@ -102,7 +102,7 @@ export default function Home() {
                 <ul className="space-y-2 mb-6 text-gray-600">
                   <li>• Elegant arrangement of artificial roses on the bed</li>
                   <li>• Unique balloons with decorative ribbons</li>
-                  <li>• A phrase on the wall with "the occasion type" in a beautiful style</li>
+                  <li>• A phrase on the wall with &ldquo;the occasion type&rdquo; in a beautiful style</li>
                 </ul>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-2xl font-bold">599 Dhs</span>
@@ -287,7 +287,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    "Working with Havenly was an absolute dream. They transformed my space into something I never thought possible!"
+                    &ldquo;Working with Havenly was an absolute dream. They transformed my space into something I never thought possible!&rdquo;
                   </p>
                   <div className="flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
@@ -307,7 +307,7 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    "The designer really understood my style and helped me create a space that feels uniquely mine."
+                    &ldquo;The designer really understood my style and helped me create a space that feels uniquely mine.&rdquo;
                   </p>
                   <div className="flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
