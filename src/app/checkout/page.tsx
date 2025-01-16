@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -28,7 +28,7 @@ const packages = {
   },
 };
 
-export default function CheckoutPage() {
+function CheckoutContent() {
   const searchParams = useSearchParams();
   const packageId = searchParams.get("package") as keyof typeof packages;
   const selectedPackage = packages[packageId];
@@ -163,5 +163,27 @@ export default function CheckoutPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+function LoadingCheckout() {
+  return (
+    <div className="min-h-screen bg-gray-50 pt-24 px-4">
+      <div className="container mx-auto text-center">
+        <h1 className="text-3xl font-playfair mb-6">Loading...</h1>
+        <div className="animate-pulse">
+          <div className="h-4 bg-gray-200 rounded w-3/4 mx-auto mb-4"></div>
+          <div className="h-4 bg-gray-200 rounded w-1/2 mx-auto"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={<LoadingCheckout />}>
+      <CheckoutContent />
+    </Suspense>
   );
 } 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,12 @@ const lora = Lora({
   subsets: ["latin"],
   variable: "--font-lora",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: {
@@ -39,11 +45,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Flower Bouquet - Luxury Room Decoration Services",
     description: "Transform your space with our luxury room decoration services",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
   robots: {
     index: true,
